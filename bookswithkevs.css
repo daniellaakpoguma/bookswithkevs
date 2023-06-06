@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(120, 209, 244);
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+}
+
+.title{
+    margin-left: 30px;
+    font-size: 22px;
+    font-family: league spartan;
+    color: #f787ca;
+    font-weight: bolder;
+}
+
+.navbar-links ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: rgb(247, 135, 202);
+    display: block;
+    font-family: Poppins;
+}
+
+
+.navbar-links li:hover{
+    background-color: #76d0f4;
+    transition: background-color 0.3s;
+}
+
+.navbar-links li a:hover{
+    color:  #ffb600;
+    transition: color 0.3s;
+}
+
+.toggle {
+    display: none;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.bar{
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(247, 135, 202);
+    border-radius: 3px;
+}
+
+@media(max-width: 600px){
+    .nav-bar{
+        padding-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle{
+        display:flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%
+    }
+}
+
+/* Reading Challenge Start */
+.reading-challenge{
+    display: block;
+    background-image: url("../bookswithkevs/reading-challenge.png");
+    background-size: cover;
+    height: 700px;
+    margin:0px;
+}
+
+#challenge-words{
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+#challenge-description{
+    font-size: 20px; 
+}
+
+.challenge-header{
+    width: 65%;
+    font-family: Poppins;
+    padding-top: 120px;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    display: grid;
+    place-items: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.buttons button{
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+#join{    
+    background-color: #ffb600;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+#mine{
+    background-color: rgb(247, 135, 202);
+}
+
+/* Reading Challenge End*/
+
+/* About Me Start */
+.about-me{
+    background-color: white;
+    height: 700px;
+    display: flex;
+}
+
+.about-me-pic{
+    padding:0px;
+    margin: 0px;
+}
+
+.about-me-words{
+    width: 90%;
+    font-family: poppins;
+}
+
+.about-me-header{
+    font-size: 50px;
+    color:#f787ca;
+    padding-top: 50px;
+    font-weight: bolder;
+}
+
+.about-me-description{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 70px;
+    padding-left: 0px;
+}
+
+/*My books*/
+.my-books{
+    background-color: #ffb600;
+    height: 780px;
+}
+
+#view-all{
+    background-color: #76d0f4;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* Contact Me */
+.contact-me{
+    background-color: #ffffff;
+    height:200px;
+}
